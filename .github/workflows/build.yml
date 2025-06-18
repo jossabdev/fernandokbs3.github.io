@@ -3,7 +3,7 @@ name: Build Project
 run-name: Build Node Js Project by ${{ github.actor }}
 
 on:
-    pull_request: 
+    push: 
         branches: [ test ]
 
 jobs:
