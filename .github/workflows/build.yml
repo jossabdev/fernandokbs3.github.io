@@ -28,7 +28,7 @@ jobs:
             - name: Build app
               run: npm run build
             - name: Upload artifactory
-              if: ${{ matrix.os == 'ubuntu-latets' && matrix.node == 18 }}
+              if: ${{ matrix.os == 'ubuntu-latest' && matrix.node == 18 }}
               uses: actions/upload-pages-artifact@v3
               with:
                 path: public/
